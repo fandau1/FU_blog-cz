@@ -2,9 +2,11 @@
 layout: post
 title: Tutorial Pool-Matrix-Monitor
 ---
+Návod na výrobu hodin a teploměru k bazénu.
+
+<img src="/images/404.jpg" height="230" />  <img src="image/pool_clock.jpg" height="230" />
 
 # PoolMatrixNano
-<img src="https://github.com/fandau1/Pool-Matrix-Monitor/blob/master/image/matrix-cycle.gif" height="230" />  <img src="image/pool_clock.jpg" height="230" />
 
 ## Úvod
 Zdavím, nápad udělat si vlastní teploměr k bazénu mě napadl po používání teploměru "zvířátka". Tento teploměr je velký, ale hlavně musíte šahat do vody, pokud chcete znát teplotu. Proto mě napadl nápad udělat si vlastní hodiny s teploměrem, který bude měřit venkovní a bazénovou teplotu. Inspiraci na displej jsem vzal z průmyslových hodin teploměrů, které se používají na plaveckém bazénu
