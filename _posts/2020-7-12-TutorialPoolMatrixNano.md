@@ -4,12 +4,12 @@ title: Tutorial Pool-Matrix-Monitor
 ---
 
 # PoolMatrixNano
-<img src="https://github.com/fandau1/Pool-Matrix-Monitor/image/matrix-cycle.gif" height="230" />  <img src="image/pool_clock.jpg" height="230" />
+<img src="https://github.com/fandau1/Pool-Matrix-Monitor/blob/master/image/matrix-cycle.gif" height="230" />  <img src="image/pool_clock.jpg" height="230" />
 
 ## Úvod
 Zdavím, nápad udělat si vlastní teploměr k bazénu mě napadl po používání teploměru "zvířátka". Tento teploměr je velký, ale hlavně musíte šahat do vody, pokud chcete znát teplotu. Proto mě napadl nápad udělat si vlastní hodiny s teploměrem, který bude měřit venkovní a bazénovou teplotu. Inspiraci na displej jsem vzal z průmyslových hodin teploměrů, které se používají na plaveckém bazénu
 
-<img src="https://github.com/fandau1/Pool-Matrix-Monitor/image/teplomer_zviratko.png" height="230" />  <img src="image/hodiny_prymyslove.png" height="230" />
+<img src="https://github.com/fandau1/Pool-Matrix-Monitor/blob/master/image/teplomer_zviratko.png" height="230" />  <img src="image/hodiny_prymyslove.png" height="230" />
 
 *teploměr zvířátka, prumyslove bazenove hodiny*
 *(kresleno kvuli copyrightu)*
@@ -19,7 +19,7 @@ Myšlenkou tedy bylo vyrobit hodiny s teploměrem a vše zobrazovat na displeji.
 ## 0. Možnosti Bazénu
 Pokud si tedy chcete vyrobit taky takové hodiny s teploměrem. Doporučuji vám si před tím určit, kam chcete displej umístit, a kam umístíte do bazénu teploměr. K Bazénovému temploměru je nutné přivést 3 dráty od arduina (+5V, GND, DigitalPin). K samotnému displeji je potřeba přivéct dráty pro napájení (+5V,GND).
 
-<img src="https://github.com/fandau1/Pool-Matrix-Monitor/image/pool_box.JPG" height="250" />  <img src="image/pool-sensor2.png" height="250" /> <img src="image/pool-sensor1.jpg" height="250" />
+<img src="https://github.com/fandau1/Pool-Matrix-Monitor/blob/master/image/pool_box.JPG" height="250" />  <img src="image/pool-sensor2.png" height="250" /> <img src="image/pool-sensor1.jpg" height="250" />
 
 *Foto mého řešení krabičky a sensoru u bazénu*
 
@@ -28,7 +28,7 @@ K napájení je nutné použít 5V. Napájení přes VIN konektor podle mě nen�
 ## 1. Deska plošného spoje (Obvod)
 Protože mám doma možnost vyrábět jednostranné DPS, tak jsem navrhl jednostranou desku s pár "proklemováky" (nevim jak se tomu na DPS říká asi nijak prostě místo druhé vrstvy to propojím drátkem). Protože je tohle, ale tutoriál a ne všichni mají možnost vyrobit si DPS. Je zde možnost zapojit to na prototype board, nebo rovnou připájet moduly a součástky k sobě. (případně pokud si chcete projekt pouze vyzkoušet na breadboard). Pokud tedy nechcete vyrábět DPS přejděte na část 1.2
 
-<img src="https://github.com/fandau1/Pool-Matrix-Monitor/image/pcb_prototype.jpg" height="230" /> <img src="image/pcb_prototype2.jpg" height="230" /> <img src="image/pcb_prototype3.jpg" height="230" />
+<img src="https://github.com/fandau1/Pool-Matrix-Monitor/blob/master/image/pcb_prototype.jpg" height="230" /> <img src="image/pcb_prototype2.jpg" height="230" /> <img src="image/pcb_prototype3.jpg" height="230" />
 
 *ukázka trochu jiné verze DPS*
 
@@ -61,7 +61,7 @@ Pokud jste se rozhodli vyrobit si DPS použijte svoji oblíbenou metodu, já zn�
 
 *Ceny jsou orientační a nejsou včetně poštovného*
 
-<img src="https://github.com/fandau1/Pool-Matrix-Monitor/image/PoolmatrixPrototype.jpg" height="400" />
+<img src="https://github.com/fandau1/Pool-Matrix-Monitor/blob/master/image/PoolmatrixPrototype.jpg" height="400" />
 
 *Ukázka mojí prototypové desky s ethernetem*
 
@@ -77,18 +77,18 @@ Pokud jste se rozhodli vyrobit si DPS použijte svoji oblíbenou metodu, já zn�
 | A1 | -> | PH sensor |
 | A0 | -> | Photo resistor(LUX meter) |
 
-<img src="https://github.com/fandau1/Pool-Matrix-Monitor/image/PMN-v1-schema.png" height="800" />
+<img src="https://github.com/fandau1/Pool-Matrix-Monitor/blob/master/image/PMN-v1-schema.png" height="800" />
 
 ## 2. Nahrání Softwaru
 Software se nahraje v Arduino IDE, přes usb do arduino nano. Potřebný kód je ve složce **/PoolMatrixNano/arduino-code**. V programu je i příprava na PH sensor (která není zahrnuta do kodu), ale zřejmě jej nedodělám protože je docela nepřesný a drahý. Aby jste byly schopný nahrát kód je nutné stáhnout knihovny níže. V knihovně MD_Parola musíte vypnou nadstadardní funkce viz foto (jinak by se program nevešel na arduino nano).
 
 
 
-<img src="https://github.com/fandau1/Pool-Matrix-Monitor/image/pool_md_parola_disable.PNG" height="800" />
+<img src="https://github.com/fandau1/Pool-Matrix-Monitor/blob/master/image/pool_md_parola_disable.PNG" height="800" />
 
 **V MD_Parola library musíte  vypnout nadstadardní funkce**
 
-<img src="https://github.com/fandau1/Pool-Matrix-Monitor/image/arduino_change_cycle.PNG" height="800" />
+<img src="https://github.com/fandau1/Pool-Matrix-Monitor/blob/master/image/arduino_change_cycle.PNG" height="800" />
 Zde jsi můžete přenastavit text, který se zobrazuje na maticovce
 
 
