@@ -4,7 +4,7 @@ title: Tutorial Pool-Matrix-Monitor
 ---
 Návod na výrobu hodin a teploměru k bazénu.
 
-<img src="/images/404.jpg" height="230" />  <img src="image/pool_clock.jpg" height="230" />
+<img src="images/404.jpg" height="230" />  <img src="image/pool_clock.jpg" height="230" />
 
 # PoolMatrixNano
 
